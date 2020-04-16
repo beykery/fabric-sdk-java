@@ -28,6 +28,15 @@ import org.junit.Test;
 import static org.hyperledger.fabric.sdk.testutils.TestUtils.resetConfig;
 
 public class ClientTest {
+    /**
+     * 标准版grpc地址
+     */
+    private static final String ORIGIN_GRPC = "172.18.11.62";
+    /**
+     * 国密版grpc地址
+     */
+    private static final String GM_GRPC = "172.18.11.63";
+
     private static final String CHANNEL_NAME = "channel1";
     static HFClient hfclient = null;
 
